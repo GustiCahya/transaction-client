@@ -1,0 +1,21 @@
+.form-transaction{
+    h1{
+        margin: 40px 0 30px 0;
+    }
+    .input-field{
+        letter-spacing: .05rem;
+    }
+    .btn{
+        font-weight: 600;
+        letter-spacing: .05rem;
+    }
+}
+.transaction-result p{
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: .05rem;
+}

@@ -1,0 +1,38 @@
+.tiers-table {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.tiers-table .title {
+  font-weight: bold;
+  border-bottom: 3px solid #202020;
+}
+
+.tiers-table__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.tiers-table__row .btn {
+  margin-right: 10px;
+}
+
+.tiers-table__row .btn:first-of-type {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .tiers-table__row .btn:first-of-type {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=tiers.styles.css.map */

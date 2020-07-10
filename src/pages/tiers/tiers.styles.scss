@@ -1,0 +1,26 @@
+.tiers-table{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    .title{
+        font-weight: bold;
+        border-bottom: 3px solid #202020;
+    }
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 20px;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid grey;
+        .btn{
+            margin-right: 10px;
+            &:first-of-type{
+                margin-bottom: 10px;
+                @media only screen and (min-width: 992px){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
