@@ -110,7 +110,7 @@ class Tiers extends React.Component {
         const {linkApi} = this.props;
         Swal.fire({
             title: `Yakin mau dihapus ?`,
-            text: `Tingkatan ${id} tidak akan bisa dikembalikan setelah dihapus.`,
+            text: `Tingkatan ini tidak akan bisa dikembalikan setelah dihapus.`,
             icon: 'warning',
             showCancelButton: true,
             confirmButtonText: 'Yap, hapus aja!',
@@ -203,7 +203,7 @@ class Tiers extends React.Component {
                         (tiers.length < 1) ? <p className="center">Tabel kosong...</p> : null
                     }
                     {
-                        tiers.map(tier => {
+                        tiers.map((tier, idx) => {
                             
                             const { isEdit, idEdit } = this.state;
                             const isValid = isEdit && tier.id === idEdit;
@@ -215,7 +215,7 @@ class Tiers extends React.Component {
                             return (
                             <div key={tier.id} data-id={tier.id} className="tiers-table__row">
                                 <div className="id">
-                                    Tingkat {tier.id}
+                                    Tingkat {idx+1}
                                 </div>
                                 <div className="min_trx">
                                     {
